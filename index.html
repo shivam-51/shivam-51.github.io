@@ -50,7 +50,7 @@
                                     <ul>
                                         <li class="description"> Discussed with the mentors project in more detail and started working on the external UI</li>
                                         <li class="description"> Understood the Code Base in more details </li>
-                                        <li class="description"> Added a a new tab "Styles Inspector" at the sidebar just below "Formatting" tab</li>
+                                        <li class="description"> Added a a new tab "Styles Inspector" at the sidebar just below "Formatting" tab.(<a href="https://gerrit.libreoffice.org/c/core/+/93909" style="color:blue">Merged</a>)</li>
                                     </ul>
                                 </p>
                             </div>
@@ -65,8 +65,9 @@
                                     <p> WEEK 1 </p>
                                         <p class="description">
                                             <ul>
-                                                <li class="description">Added the 'Character Styles' panel in the Inspector. Users can now access the Inspector from the sidebar</li>
-                                                <li class="description">Added the property dump for CS at the Inspector </li>
+                                                <li class="description">A weldtreebox was added to store all the properties extracted from the current cursor position.(<a href="https://gerrit.libreoffice.org/c/core/+/95228" style="color:blue">Merged</a>)</li>
+                                                <li class="description">The Inspector's codebase was earlier kept in svx module. But now i am changing it such that now only the GUI will be in svx whereas the main implementation of the internal contents will be in sw.
+                                                 This change is being done as a progressive measure towards cleaner code.(<a href="https://gerrit.libreoffice.org/c/core/+/95657" style="color:blue">WIP</a>) </li>
                                             </ul>
                                         </p>
                                     <p> WEEK 2 </p>
