@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>TimeLine</title>
+</head>
+  <!-- SHOWCASE -->
+  <section id="showcase" class="py-5">
+    <div class="primary-overlay text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 text-center">
+            <h1 class="display-4 mt-5 pt-5 heading1">
+              Google Summer of Code 2020
+            </h1>
+            <p class="lead">Hi, This is Shivam. Welcome to my blog where i update the status of my GSoC project with LibreOffice about Style Inspector.
+            I have tried to keep the blog clean and to the point. Check out the timeline.</p>
+            <p>Click <a href="mailto:shivamhere247@gmail.com" style="color:blue">here</a> to give your feedback or any suggestions</p>
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <img src="img/LO_logo.png" alt="" class="img-fluid d-none d-lg-block img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<body>
+ <div class="demo">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="main-timeline">
+                        <div class="timeline">
+                            <div class="timeline-icon"></div>
+                            <div class="timeline-content left">
+                                <span class="date">April 2020</span>
+                                <h4 class="title">Community Bonding Period</h4>
+                                <p class="description">
+                                    <ul>
+                                        <li class="description"> Discussed with the mentors project in more detail and started working on the external UI</li>
+                                        <li class="description"> Understood the Code Base in more details </li>
+                                        <li class="description"> Added a a new tab "Styles Inspector" at the sidebar just below "Formatting" tab.(<a href="https://gerrit.libreoffice.org/c/core/+/93909" style="color:blue">Merged</a>)</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline">
+                            <div class="timeline-icon"></div>
+                            <div class="timeline-content right">
+                                <span class="date">1 June - 29 June</span>
+                                <h4 class="title">Code Phase 1</h4>
+                                <p class="description">
+                                    <p> WEEK 1 </p>
+                                        <p class="description">
+                                            <ul>
+                                                <li class="description">A weldtreebox was added to store all the properties extracted from the current cursor position.(<a href="https://gerrit.libreoffice.org/c/core/+/95228" style="color:blue">Merged</a>)</li>
+                                                <li class="description">The Inspector's codebase was earlier kept in svx module. But now i am changing it such that now only the GUI will be in svx whereas the main implementation of the internal contents will be in sw.
+                                                 This change is being done as a progressive measure towards cleaner code.(<a href="https://gerrit.libreoffice.org/c/core/+/95657" style="color:blue">WIP</a>) </li>
+                                            </ul>
+                                        </p> 
+                                    <p> WEEK 2 </p>
+                                        <p class="description">
+                                            <ul>
+                                                <li class="description">I Completed the change of source code for Inspector such that the main property dump implementation will be in sw and the UI is in svx.(<a href="https://gerrit.libreoffice.org/c/core/+/95657" style="color:blue">Merged</a>)</li>
+                                            </ul>
+                                        </p>
+                                    <p> WEEK 3 </p>
+                                        <p class="description">
+                                            <ul>
+                                                <li class="description">The UI for the Inspector had been added previously, but there was no content. This week the property dump feature to show all the Character and Paragraph properties for the text at the cursor was completed.(<a href="https://gerrit.libreoffice.org/c/core/+/96027" style="color:blue">WIP</a>)</li>
+                                                <li class="description">In Paragraph Styles, for example most of the properties are defined in the "Default Paragraph Styles" these properties later redefine themselves at the various child Styles. Relevant code was added to show any property only on that level in which it gets redefined for the last time i.e at the level whose value matters for that respective property.(<a href="https://gerrit.libreoffice.org/c/core/+/95094" style="color:blue">WIP</a>) </li>
+                                            </ul>
+                                        </p>
+                                    <p> WEEK 4 </p>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline">
+                            <div class="timeline-icon"></div>
+                            <div class="timeline-content">
+                                <span class="date">1 July - 27 July</span>
+                                <h4 class="title">Code Phase 2</h4>
+                                <p class="description">
+                                    <p> WEEK 1 </p>
+                                    <p> WEEK 2 </p>
+                                    <p> WEEK 3 </p>
+                                    <p> WEEK 4 </p>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="timeline">
+                            <div class="timeline-icon"></div>
+                            <div class="timeline-content right">
+                                <span class="date">1 August - 24 August</span>
+                                <h4 class="title">Code Phase 3</h4>
+                                <p class="description">
+                                    <p> WEEK 1 </p>
+                                    <p> WEEK 2 </p>
+                                    <p> WEEK 3 </p>
+                                    <p> WEEK 4 </p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <footer id="main-footer" class="py-5 bg-primary text-white">
+    <div class="container">
+      <div class="text-center">
+          <p style="color:black">
+           2020
+          </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
