@@ -86,8 +86,9 @@
                     >. Also check out my timeline(top right) to know how i
                     managed my time every week during the summer.
                 </p>
+                <br />
 
-                <h4 style="text-align: left;">Work Result</h4>
+                <h4 style="text-align: left;">Overview of Work Done</h4>
                 <br />
                 <p class="text" style="text-align: left;">
                     Working on the project was more challenging than i had
@@ -114,7 +115,111 @@
                     completed. Yes, you could now see a beautiful list of more
                     than 170 properties about the text at the cursor in the
                     Styles Inspector!<br />
-                    With time I understood more about the UNO API that
+                    The Inspector extensively uses the UNO API to detect the
+                    style attributes. Whenever we click on any text first for
+                    all the attributes it is checked if it was directly
+                    formatted or is a result of any applied Paragraph Style or
+                    Character Style. The hierarchy followed in terms of style
+                    attributes by UNO API is :- <br />
+                    <script src="https://gist.github.com/shivam-51/f84405c666ec82abfb5af548785a2d7d.js"></script>
+                    <br />
+                </p>
+                <p class="text" style="text-align: left;">
+                    Accordingly for each style at each level it was checked if
+                    its property state was beans::PropertyState_DIRECT_VALUE or
+                    beans::PropertyState_DEFAULT_VALUE, a property will be
+                    displayed in each category(DF, CS, PS) only if it is a
+                    DIRECT value and all the styles with DEFAULT state will be
+                    included in Default Paragraph Style as that is the "mother"
+                    of all styles. The Inspector would now look like this<br /><br />
+                    <img
+                        style="width: 500;"
+                        height="400"
+                        class="center"
+                        src="img/prework.png"
+                    />
+                </p>
+                <p class="text" style="text-align: left;">
+                    The next milestone was to grey out the properties which are
+                    directly modified at a category but are overriden by any
+                    different value defined at some higher level.<br />
+                    The most significant patches merged during the GSoC phase
+                    are:-<br /><br />
+                </p>
+
+                <p class="text" style="text-align: right;"></p>
+                <ul>
+                    <li>
+                        <a href="https://gerrit.libreoffice.org/c/core/+/100835"
+                            >tdf#135334 Add keyboard shortcut to launch SI</a
+                        >
+                    </li>
+                    <li>
+                        <a href="https://gerrit.libreoffice.org/c/core/+/99983"
+                            >tdf#134560 tdf#135107 make inspector contents human
+                            readable</a
+                        >
+                    </li>
+                    <li>
+                        <a href="https://gerrit.libreoffice.org/c/core/+/98561"
+                            >tdf#134555 Show direct formatting at the Styles
+                            Inspector</a
+                        >
+                    </li>
+                    <li>
+                        <a href="https://gerrit.libreoffice.org/c/core/+/98490"
+                            >tdf#134661 Issue in Inspector update</a
+                        >
+                    </li>
+                    <li>
+                        <a href="https://gerrit.libreoffice.org/c/core/+/97263"
+                            >Added tree view for Inspector and support for PS</a
+                        >
+                    </li>
+                    <li>
+                        <a href="https://gerrit.libreoffice.org/c/core/+/95094"
+                            >Get the property dump of the text at the cursor</a
+                        >
+                    </li>
+                    <li>
+                        <a href="https://gerrit.libreoffice.org/c/core/+/95657"
+                            >Changed the source code location for the
+                            Inspector</a
+                        >
+                    </li>
+                    <li>
+                        <a href="https://gerrit.libreoffice.org/c/core/+/98310"
+                            >tdf#134567 Show all properties in DPS</a
+                        >
+                    </li>
+                    <li>
+                        <a href="https://gerrit.libreoffice.org/c/core/+/95657"
+                            >tdf#135528 tdf#135491 Fix LO crash when using SI
+                            with macro enabled</a
+                        >
+                    </li>
+                    <p class="text" style="text-align: left;">
+                        Check out all the merged patches
+                        <a
+                            href="https://gerrit.libreoffice.org/q/owner:shivamhere247%2540gmail.com"
+                            style="color: red;"
+                            >here</a
+                        >. The final work product :) -
+                    </p>
+                    <br />
+                    <h4 style="text-align: left;">Final Notes</h4>
+                    <br />
+                    <p class="text" style="text-align: left;">
+                        At last, I want to thank my mentors Tomaz, Mike and
+                        Heiko for their continued support. It was fun working
+                        with you together on this project and I am very excited
+                        to present my talk on the Styles Inspector at LiboCon
+                        2020. <br />
+                        Feel free to follow me on GitHub or contribute to
+                        LibreOffice.
+                    </p>
+
+                    <!-- With time I understood more about the UNO API that
                     LibreOffice uses and taking referance from MRI was able to
                     divide the properties into "Paragraph Styles" and "Character
                     Styles". The Inspector is currently used just for the LO
@@ -124,19 +229,8 @@
                     that the UI will be in the svx module(so that it can be
                     easily inherited by any other class in any other module) and
                     the present implementation will be in the sw module(for
-                    Writer). Inspector.
-                </p>
-
-                <h4 style="text-align: left;">Final Notes</h4>
-                <br />
-                <p class="text" style="text-align: left;">
-                    At last, I want to thank my mentors Tomaz, Mike and Heiko
-                    for their continued support. It was fun working with you
-                    together on this project and I am very excited to present my
-                    talk on the Styles Inspector at LiboCon 2020. <br />
-                    Feel free to follow me on GitHub or contribute to
-                    LibreOffice.
-                </p>
+                    Writer). Much Thanks to Tomaz for guiding me with this. -->
+                </ul>
             </div>
         </div>
     </body>

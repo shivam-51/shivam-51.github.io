@@ -55,6 +55,9 @@ h1 {
     align-items: center;
     text-shadow: 0.5px 0.5px 4px;
 }
+list {
+    left: 10px;
+}
 .center {
     display: block;
     margin-left: auto;
