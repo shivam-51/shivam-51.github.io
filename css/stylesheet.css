@@ -53,8 +53,13 @@ h1 {
     font-size: 2.5rem;
     width: 100%;
     align-items: center;
+    text-shadow: 0.5px 0.5px 4px;
 }
-
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 h1.subpage {
     margin-left: 25%;
     width: 50%;
