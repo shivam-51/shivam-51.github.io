@@ -17,7 +17,7 @@
             </h2>
         </div>
         <h1 style="text-align: center;" heading1>
-            GSoC 2020 @ LibreOffice Journey/Report
+            GSoC 2020 @ LibreOffice Report/Journey
         </h1>
         <br /><br />
         <div class="row">
@@ -63,7 +63,7 @@
                     first bug and LO greets me with this beautiful mail which
                     shows they take their contributors very seriously.<br /><br />
                     <img
-                        style="width: 70%;"
+                        style="width: 75%;"
                         class="center"
                         src="img/certificate.png"
                     />
@@ -103,8 +103,8 @@
                     community bonding period had started and i was stuck with
                     nothing more than this empty panel.<br /><br />
                     <img
-                        style="width: 500;"
-                        height="400"
+                        style="width: 312;"
+                        height="500"
                         class="center"
                         src="img/empty.png"
                     />
@@ -132,17 +132,30 @@
                     DIRECT value and all the styles with DEFAULT state will be
                     included in Default Paragraph Style as that is the "mother"
                     of all styles. The Inspector would now look like this<br /><br />
-                    <img
-                        style="width: 500;"
-                        height="400"
-                        class="center"
-                        src="img/prework.png"
-                    />
+                    <img width="100%" src="img/prework.png" />
+                </p>
+                <p class="text" style="text-align: left;">
+                    The nodes are divided into three types: Category, Simple and
+                    Complex. Category type nodes are basically the main
+                    categories (PS, CS and DF). Complex properties are those
+                    which are styles and have properties defined for them.
+                    Simple nodes are the properties having some value stored in
+                    them. Currently only PS, CS and DF categories are present in
+                    the Inspector but one can add say "Table Styles", "Frame
+                    Styles" or any other style according to will following the
+                    struct. <br />
+                    <script src="https://gist.github.com/shivam-51/9876ac9339d102df3918207841275f02.js"></script>
                 </p>
                 <p class="text" style="text-align: left;">
                     The next milestone was to grey out the properties which are
                     directly modified at a category but are overriden by any
                     different value defined at some higher level.<br />
+                    <img
+                        style="width: 400;"
+                        height="600"
+                        class="center"
+                        src="img/Pre_complete.gif"
+                    />
                     The most significant patches merged during the GSoC phase
                     are:-<br /><br />
                 </p>
@@ -150,50 +163,68 @@
                 <p class="text" style="text-align: right;"></p>
                 <ul>
                     <li>
-                        <a href="https://gerrit.libreoffice.org/c/core/+/100835"
+                        <a
+                            href="https://gerrit.libreoffice.org/c/core/+/100835"
+                            style="color: red;"
                             >tdf#135334 Add keyboard shortcut to launch SI</a
                         >
                     </li>
                     <li>
-                        <a href="https://gerrit.libreoffice.org/c/core/+/99983"
+                        <a
+                            href="https://gerrit.libreoffice.org/c/core/+/99983"
+                            style="color: red;"
                             >tdf#134560 tdf#135107 make inspector contents human
                             readable</a
                         >
                     </li>
                     <li>
-                        <a href="https://gerrit.libreoffice.org/c/core/+/98561"
+                        <a
+                            href="https://gerrit.libreoffice.org/c/core/+/98561"
+                            style="color: red;"
                             >tdf#134555 Show direct formatting at the Styles
                             Inspector</a
                         >
                     </li>
                     <li>
-                        <a href="https://gerrit.libreoffice.org/c/core/+/98490"
+                        <a
+                            href="https://gerrit.libreoffice.org/c/core/+/98490"
+                            style="color: red;"
                             >tdf#134661 Issue in Inspector update</a
                         >
                     </li>
                     <li>
-                        <a href="https://gerrit.libreoffice.org/c/core/+/97263"
+                        <a
+                            href="https://gerrit.libreoffice.org/c/core/+/97263"
+                            style="color: red;"
                             >Added tree view for Inspector and support for PS</a
                         >
                     </li>
                     <li>
-                        <a href="https://gerrit.libreoffice.org/c/core/+/95094"
+                        <a
+                            href="https://gerrit.libreoffice.org/c/core/+/95094"
+                            style="color: red;"
                             >Get the property dump of the text at the cursor</a
                         >
                     </li>
                     <li>
-                        <a href="https://gerrit.libreoffice.org/c/core/+/95657"
+                        <a
+                            href="https://gerrit.libreoffice.org/c/core/+/95657"
+                            style="color: red;"
                             >Changed the source code location for the
                             Inspector</a
                         >
                     </li>
                     <li>
-                        <a href="https://gerrit.libreoffice.org/c/core/+/98310"
+                        <a
+                            href="https://gerrit.libreoffice.org/c/core/+/98310"
+                            style="color: red;"
                             >tdf#134567 Show all properties in DPS</a
                         >
                     </li>
                     <li>
-                        <a href="https://gerrit.libreoffice.org/c/core/+/95657"
+                        <a
+                            href="https://gerrit.libreoffice.org/c/core/+/95657"
+                            style="color: red;"
                             >tdf#135528 tdf#135491 Fix LO crash when using SI
                             with macro enabled</a
                         >
@@ -205,16 +236,21 @@
                             style="color: red;"
                             >here</a
                         >. The final work product :) -
+                        <img
+                            style="width: 400;"
+                            height="600"
+                            class="center"
+                            src="img/Complete.gif"
+                        />
                     </p>
                     <br />
                     <h4 style="text-align: left;">Final Notes</h4>
                     <br />
                     <p class="text" style="text-align: left;">
                         At last, I want to thank my mentors Tomaz, Mike and
-                        Heiko for their continued support. It was fun working
-                        with you together on this project and I am very excited
-                        to present my talk on the Styles Inspector at LiboCon
-                        2020. <br />
+                        Heiko for their continued support, without which it
+                        would have been impossible to make any progress. It was
+                        fun working with you together on this project. <br />
                         Feel free to follow me on GitHub or contribute to
                         LibreOffice.
                     </p>
