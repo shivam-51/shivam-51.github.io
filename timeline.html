@@ -177,6 +177,17 @@
                                         </li>
                                     </ul>
                                     <p>WEEK 4</p>
+                                    <p class="description"></p>
+                                    <ul>
+                                        <li class="description">
+                                            The patch for property dump is now
+                                            complete and merged.(<a
+                                                href="https://gerrit.libreoffice.org/c/core/+/95094"
+                                                style="color: blue;"
+                                                >MERGED</a
+                                            >)
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
 
@@ -187,9 +198,176 @@
                                     <h4 class="title">Code Phase 2</h4>
                                     <p class="description"></p>
                                     <p>WEEK 1</p>
+                                    <p class="description"></p>
+                                    <ul>
+                                        <li class="description">
+                                            Added tree view for Inspector and
+                                            support for PS. The support for PS
+                                            has been added. The UI for Inspector
+                                            has been updated with expand /
+                                            collapse buttons for PS and CS.(<a
+                                                href="https://gerrit.libreoffice.org/c/core/+/97263"
+                                                style="color: blue;"
+                                                >MERGED</a
+                                            >)
+                                        </li>
+                                    </ul>
                                     <p>WEEK 2</p>
+                                    <p class="description"></p>
+                                    <ul>
+                                        <li class="description">
+                                            Previously Default Character Style
+                                            was added in the Inspector. This
+                                            should not be shown, added a patch
+                                            to hide it.(<a
+                                                href="https://gerrit.libreoffice.org/c/core/+/98311"
+                                                style="color: blue;"
+                                                >MERGED</a
+                                            >). Default Paragraph Style should
+                                            show all the properties by
+                                            default.(<a
+                                                href="https://gerrit.libreoffice.org/c/core/+/98310"
+                                                style="color: blue;"
+                                                >MERGED</a
+                                            >)
+                                        </li>
+                                        <li class="description">
+                                            The Inspector was catching different
+                                            text nodes while trying to capture
+                                            the current cursor.This led to a
+                                            crash. Fixed this(<a
+                                                href="https://gerrit.libreoffice.org/c/core/+/98225"
+                                                style="color: blue;"
+                                                >MERGED</a
+                                            >). Also instead of a method, now we
+                                            use IMPL_LINK_NO_ARG for Inspector
+                                            update(<a
+                                                href="https://gerrit.libreoffice.org/c/core/+/98490"
+                                                style="color: blue;"
+                                                >MERGED</a
+                                            >)
+                                        </li>
+                                    </ul>
                                     <p>WEEK 3</p>
+                                    <p class="description"></p>
+                                    <ul>
+                                        <li class="description">
+                                            If we use a custom style which is
+                                            not a child of Default Paragraph,
+                                            than that led to a crash, because we
+                                            were detecting the child from the
+                                            lowest child to DPS(but in this case
+                                            this assumtion fails). Fixed it(<a
+                                                href="https://gerrit.libreoffice.org/c/core/+/98816"
+                                                style="color: blue;"
+                                                >MERGED</a
+                                            >)
+                                        </li>
+                                        <li class="description">
+                                            When not Asian or Complex styles are
+                                            disabled they should not be
+                                            dispalyed in the Inspector. Patch
+                                            was added for this change(<a
+                                                href="https://gerrit.libreoffice.org/c/core/+/97530"
+                                                style="color: blue;"
+                                                >MERGED</a
+                                            >)
+                                        </li>
+                                        <li class="description">
+                                            Cleanup of variable names(most
+                                            important in open source!)(<a
+                                                href="https://gerrit.libreoffice.org/c/core/+/97810"
+                                                style="color: blue;"
+                                                >MERGED</a
+                                            >)
+                                        </li>
+                                    </ul>
                                     <p>WEEK 4</p>
+                                    <p class="description"></p>
+                                    <ul>
+                                        <li class="description">
+                                            tdf#134564 tdf#134578 Improve
+                                            hierarchy viewing in Inspector. By
+                                            adding tree lines and improving the
+                                            STRUCT to store the treelines(<a
+                                                href="https://gerrit.libreoffice.org/c/core/+/98990"
+                                                style="color: blue;"
+                                                >MERGED</a
+                                            >) Also added Headers "Properties"
+                                            and "Values"(<a
+                                                href="https://gerrit.libreoffice.org/c/core/+/99265"
+                                                style="color: blue;"
+                                                >MERGED</a
+                                            >)
+                                        </li>
+                                        <li class="description">
+                                            The Inspector contents should be
+                                            naturally sorted for easier
+                                            readablity and for easily searching
+                                            the proeprties we want.(<a
+                                                href="https://gerrit.libreoffice.org/c/core/+/99335"
+                                                style="color: blue;"
+                                                >MERGED</a
+                                            >)
+                                        </li>
+                                        <li class="description">
+                                            Another cleanup(again very
+                                            important!)(<a
+                                                href="https://gerrit.libreoffice.org/c/core/+/99416"
+                                                style="color: blue;"
+                                                >MERGED</a
+                                            >)
+                                        </li>
+                                        <li class="description">
+                                            Patch for Direct Formatting was
+                                            added.(<a
+                                                href="https://gerrit.libreoffice.org/c/core/+/98516"
+                                                style="color: blue;"
+                                                >MERGED</a
+                                            >) and should be empty by default as
+                                            there is nothing manually changed(<a
+                                                href="https://gerrit.libreoffice.org/c/core/+/99420"
+                                                style="color: blue;"
+                                                >MERGED</a
+                                            >)
+                                        </li>
+                                        <li class="description">
+                                            tdf#135178 tdf#135179 tdf#134820
+                                            Issue in SetChgLnk in Inspector,
+                                            still crashing. Fixed it(<a
+                                                href="https://gerrit.libreoffice.org/c/core/+/98516"
+                                                style="color: blue;"
+                                                >MERGED</a
+                                            >)
+                                        </li>
+                                        <li class="description">
+                                            Initially the strings displayed in
+                                            the Inspector were those internally
+                                            stored in the UNO API. That's not
+                                            what a user would like to see as
+                                            that's quite "cryptic". Added SIDs
+                                            for all the properties such that
+                                            they are now easily readable and
+                                            understood.(<a
+                                                href="https://gerrit.libreoffice.org/c/core/+/99983"
+                                                style="color: blue;"
+                                                >MERGED</a
+                                            >)
+                                        </li>
+                                        <li class="description">
+                                            tdf#135344 Resolved Inspector scroll
+                                            bar issues.(<a
+                                                href="https://gerrit.libreoffice.org/c/core/+/99983"
+                                                style="color: blue;"
+                                                >MERGED</a
+                                            >)Sel Ellpisize for better viewing
+                                            of longgg.. properties.(<a
+                                                href="https://gerrit.libreoffice.org/c/core/+/100046"
+                                                style="color: blue;"
+                                                >MERGED</a
+                                            >)
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
 
@@ -201,10 +379,48 @@
                                     >
                                     <h4 class="title">Code Phase 3</h4>
                                     <p class="description"></p>
-                                    <p>WEEK 1</p>
-                                    <p>WEEK 2</p>
-                                    <p>WEEK 3</p>
-                                    <p>WEEK 4</p>
+                                    <p>WEEK 1-2</p>
+                                    <ul>
+                                        tdf#135528 tdf#135491 Fix LO crash when
+                                        using macro with SI enabled
+                                        <li class="description">
+                                            Border properties were not
+                                            properly/completely displayed in the
+                                            Inspector. The reason is that they
+                                            are stored in STRUCT internally.
+                                            Added patch to resolve this.(<a
+                                                href="https://gerrit.libreoffice.org/c/core/+/100288"
+                                                style="color: blue;"
+                                                >MERGED</a
+                                            >).
+                                        </li>
+                                        <li class="description">
+                                            ...and crash again when using macro
+                                            with Inspector enabled. Fixed this.
+                                            Check the patch for more details.(<a
+                                                href="https://gerrit.libreoffice.org/c/core/+/100493"
+                                                style="color: blue;"
+                                                >MERGED</a
+                                            >).
+                                        </li>
+                                    </ul>
+                                    <p>WEEK 3-4</p>
+                                    <ul>
+                                        <li class="description">
+                                            This patch adds shortcut command to
+                                            launch the Inspector and includes a
+                                            uno comand(.uno:InspectorDeck).(<a
+                                                href="https://gerrit.libreoffice.org/c/core/+/100835"
+                                                style="color: blue;"
+                                                >WIP</a
+                                            >).
+                                        </li>
+                                        <li class="description">
+                                            Working on the most important thing:
+                                            Documentation for the Inspector.
+                                            Should be done within this week.
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
