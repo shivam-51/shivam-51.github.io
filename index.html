@@ -156,6 +156,35 @@
                         class="center"
                         src="img/Pre_complete.gif"
                     />
+                </p>
+                <p class="text" style="text-align: left;">
+                    Things went smooth as the end of Second Evaluation
+                    approached, Inspector seemed stable and I wanted to remove
+                    the "Experimental" tag from it which prevents users from
+                    accessing any feature by default(users have to manually go
+                    to Options->"Enable Experimental features" in LibreOffice
+                    Writer). As the completion of the project seemed close, a
+                    few crash bugs were filed by the LO team. Inspector uses the
+                    GetChgLink to capture any changes in the cursor and once any
+                    change is detected the Inspector is cleared and the whole
+                    panel is rerun. Now, GetChgLink is calcuted dynamically i.e
+                    its value is found at run time and changes every time we
+                    call it. <br />
+                    The issue was that GetChgLink was called multiple times in
+                    WriterInspectorTextPanel.cxx which brought different change
+                    links thus different cursors, different property sets.. this
+                    led to a crash. The solution was not very difficult, just
+                    declare a global variable and store the value of GetChgLink
+                    the first time it is called, later use this stored value to
+                    refer to the same cursor called before. A few more crashes
+                    were noted and fixed within time. <br />
+                    We had not yet added any shortcut to launch the SI. Every
+                    user wants some shortcut to do things. You do not always
+                    want to go to the sidebar..look for Inspector and do stuff.
+                    I added a patch that introduced Ctrl+Alt+5 as the shortcut
+                    key to launch the SI. Tada!!
+                </p>
+                <p class="text" style="text-align: left;">
                     The most significant patches merged during the GSoC phase
                     are:-<br /><br />
                 </p>
@@ -250,12 +279,9 @@
                         the SI for the first time the panel shows empty, because
                         the cursor is not really on any text. At such situations
                         the panel should instead show the default state(Default
-                        Paragraph Style in PS, empty CS and and empty DF). Also
-                        I have added a patch for adding shortcut command to
-                        launch the SI which is currently under Review and should
-                        be merged soon, following which the proper icon for SI
-                        should be merged. The whole list of bugs that should/may
-                        be solved are located at
+                        Paragraph Style in PS, empty CS and and empty DF). The
+                        whole list of bugs that should/may be solved are located
+                        at
                         <a
                             href="https://bugs.documentfoundation.org/show_bug.cgi?id=134554"
                             style="color: red;"
